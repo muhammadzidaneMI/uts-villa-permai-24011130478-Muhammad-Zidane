@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vila Permai | Pemesanan Vila Puncak</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Vila Permai</h1>
+            <p>Temukan kenyamanan untuk liburan Anda di Puncak, Bogor.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#daftar-vila">Daftar Vila</a>
+            <a href="#pemesanan">Pemesanan</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="villa-section" id="daftar-vila">
+            <div class="container">
+
+                <h2>Pilihan Vila Kami</h2>
+                <p class="section-description">
+                    Pilih vila yang sesuai dengan kebutuhan liburan Anda.
+                </p>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchVilla"
+                        placeholder="Cari vila berdasarkan nama atau lokasi..."
+                    >
+                </div>
+
+                <div class="villa-list" id="villaList">
+                    <!-- Data vila akan ditampilkan menggunakan JavaScript -->
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="booking-section" id="pemesanan">
+            <div class="container">
+
+                <h2>Formulir Pemesanan</h2>
+                <p class="section-description">
+                    Isi data di bawah untuk melihat perkiraan biaya pemesanan.
+                </p>
+
+                <form class="booking-form" id="bookingForm">
+
+                    <div class="form-group">
+                        <label for="guestName">Nama Tamu</label>
+                        <input
+                            type="text"
+                            id="guestName"
+                            placeholder="Masukkan nama Anda"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkIn">Tanggal Check-in</label>
+                        <input type="date" id="checkIn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkOut">Tanggal Check-out</label>
+                        <input type="date" id="checkOut">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guestCount">Jumlah Tamu</label>
+                        <input
+                            type="number"
+                            id="guestCount"
+                            min="1"
+                            max="10"
+                            placeholder="1 - 10 orang"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="villaSelect">Pilih Unit Vila</label>
+
+                        <select id="villaSelect">
+                            <option value="">-- Pilih Vila --</option>
+                        </select>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" class="button button--secondary" id="checkButton">
+                            Cek Ketersediaan
+                        </button>
+
+                        <button type="submit" class="button button--primary">
+                            Pesan Sekarang
+                        </button>
+                    </div>
+
+                </form>
+
+
+                <div class="result-box" id="resultBox">
+                    <h3>Ringkasan Pemesanan</h3>
+                    <p>Silakan isi formulir untuk melihat total biaya.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="info-section">
+            <div class="container">
+
+                <h2>Kenapa Memilih Vila Permai?</h2>
+
+                <div class="info-list">
+
+                    <article class="info-card">
+                        <h3>Lokasi Strategis</h3>
+                        <p>
+                            Berada di kawasan Puncak, Bogor dengan suasana yang sejuk
+                            dan nyaman.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Fasilitas Lengkap</h3>
+                        <p>
+                            Setiap vila memiliki fasilitas yang dapat menunjang
+                            kenyamanan liburan Anda.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Pemesanan Mudah</h3>
+                        <p>
+                            Pilih vila, tentukan tanggal, lalu lihat total biaya
+                            sebelum melakukan pemesanan.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer" id="kontak">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Vila Permai - Puncak, Kabupaten Bogor</p>
+            <p>WhatsApp: 0812-3456-7890</p>
+            <p>Email: info@vilapermai.com</p>
+            <p class="footer__copyright">
+                &copy; 2026 Vila Permai. Semua Hak Dilindungi.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
